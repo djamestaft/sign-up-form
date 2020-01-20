@@ -1,13 +1,108 @@
+@font-face {
+  font-family: 'Poppins';
+  src: local('Poppins'), url(./fonts/Poppins-Regular.ttf) format('truetype');
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Poppins';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+   background-image: url('/images/bg-intro-desktop.png');
+   background-color: hsl(0, 100%, 74%) ;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.login-page {
+  display: flex;
+  text-align: center;
+  vertical-align: middle;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.white-form {
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+}
+form > input{
+  margin: 10px;
+  height: 35px;
+  padding-right: 5px;
+  text-indent: 10px;
+  border-radius: 3px;
+  border: 1px solid hsl(246, 25%, 77%);
+  font-weight: 700;
+  font-size: 16px;
+  font-family: 'Poppins';
+}
+
+input:focus {
+  outline: none !important;
+  border:1px solid black;
+}
+
+#terms-services {
+  font-size: 10px;
+  color: hsl(246, 25%, 77%);
+  font-weight: 500;
+}
+  
+.submit-green{
+  margin: 10px;
+  height: 35px;
+  color: white;
+  border: none;
+  padding-right: 5px;
+  text-indent: 10px;
+  border-radius: 5px;
+  background-color: hsl(154, 59%, 51%);
+  text-transform: uppercase;
+  font-size: 16px;
+  box-shadow: 0 8px 6px -6px hsl(154, 68%, 34%);
+  }
+
+.try-button {
+  background-color: hsl(248, 32%, 49%);
+  width: 100%;
+  padding-right: 0;
+  margin: 0;
+  margin-bottom: 15px;
+  text-transform: none;
+  height: 45px;
+  box-shadow: 0 8px 6px -6px hsl(248, 32%, 49%);
+}
+
+.typography {
+  margin: auto;
+  margin-right: 20px;
+  text-align: left;
+  width: 50%;
+  color: white;
+}
+
+.typography > h1 {
+  font-weight: 900;
+}
+
+
+.form-wrapper {
+  width: 50%;
+  margin: auto;
+  margin-top: 20%;
+  margin-bottom: 20%;
+}
+
+#red-terms-link {
+  color: red;
 }
